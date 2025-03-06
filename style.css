@@ -154,8 +154,22 @@ nav {
     color: rgb(255, 255, 255)  ;
 }
 .nav-link:hover {
-    background-color: rgba(0,0,0,0.05);
+    background-color:#2b2a2a ;
+    border-radius: 15px;
+    height: 52px;
 }
+
+/* رمادي فاتح (#F0F0F0) → لإحساس بسيط واحترافي
+أسود شفاف (#00000033) → لإضافة تأثير شفاف أنيق
+أبيض شفاف (#FFFFFF33) → لمظهر ناعم وخفيف
+🔹 لإبراز العنصر وجذب الانتباه:
+
+أزرق فاتح (#007BFF) → مناسب للأزرار والروابط
+أخضر فاتح (#28A745) → يعطي إحساسًا بالنجاح أو القبول
+برتقالي (#FD7E14) → لجذب الانتباه وإضافة طاقة ديناميكية
+🔹 للتأثير الداكن (Dark Mode):
+
+ */
 .nav-link span {
     margin-left: 24px;
     font-size: 1.4rem;
@@ -260,10 +274,24 @@ nav p {
 }
 .creator {
     text-decoration: none;
-    display: flex;
-    color: white;
+    color: rgb(255 255 255 / .8);
     margin-left: 50px;
+    top: -22px;
+    display: flex;
+    position: relative;
+    font-weight: bold;
+    font-size: 11px;
 }
+.views {
+    text-decoration: none;
+    color: rgb(255 255 255 / .8);
+    margin-left: 50px;
+    position: relative;
+    top: -16px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
 .image-video {
     width: 100%;
     height: 235px;
@@ -274,4 +302,31 @@ nav p {
     width: 42px;
     height: 42px;
     border-radius: 50%;
+    margin-top: 5px;
+}
+
+.hacked {
+    /* position: relative; */
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 740px;
+}
+
+.ar {
+    display: flex;
+    position: relative;
+    top: -30px;
+       
+    justify-content: end;
+    padding-right: 17px;
+}
+.en {
+    display: flex;
+    position: relative;
+    top: -30px;
+    justify-content: start;
+    padding-right: 17px;
+    left: 53px;
 }
